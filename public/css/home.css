@@ -1,0 +1,331 @@
+.container {
+    margin-top: 0;
+}
+
+.py-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid #ff8a00;
+    width: 100%;
+    height: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid #ff8a00;
+    height: 60px;
+    padding: 0;
+}
+
+.card-header .btn-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 70px;
+    background-color: #ff8a00;
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+    box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.card-header .profile-image {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-header .profile-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.card-body .users {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border: 2px solid #ff8a00;
+    border-radius: 8px;
+    height: 90%;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-body .users .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #ff8a00;
+    min-height: 50px;
+    width: 100%;
+}
+
+.card-body .users .user-messages {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.card-body .users .user-messages .card-user {
+    border-bottom: 2px solid #c5c7ca;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 75px 1fr;
+    grid-template-columns: 75px 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.card-body .users .user-messages .user-avatar {
+    grid-area: auto;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card-body .users .user-messages .user-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    margin: 15px 6px;
+}
+
+.card-body .users .user-messages .user-name {
+    display: flex;
+    flex-direction: column;
+    grid-area: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.online-status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.online {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #00ff37;
+    margin-right: 5px;
+}
+
+.offline {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    margin-right: 5px;
+}
+
+.card-body .users .user-messages .user-name-status {
+    font-style: normal;
+    font-weight: 700;
+    color: #7a7a8c;
+}
+
+.card-body .users .user-messages .half-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 62px;
+    height: 48px;
+    fill: none;
+    stroke: #ff8a00;
+    stroke-width: 7;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.card-body .users .user-messages a {
+    outline: none;
+    text-decoration: none;
+}
+
+.card-body .canvas {
+    border-left: 2px solid #ff8a00;
+    border-right: 2px solid #ff8a00;
+    height: 100%;
+    width: 65%;
+}
+
+.card-body .canvas .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8a00;
+    height: 45px;
+    width: 100%;
+}
+
+.card-body .canvas .details img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.card-body .canvas .details .receiver {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.card-body .canvas .write-message {
+    position: absolute;
+    background-color: #ff8a00;
+    height: 50px;
+    width: 64.9%;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card-body .canvas .write-message form {
+    width: 100%;
+}
+
+.card-body .canvas .write-message form #message {
+    border: 2px solid #ff8a00;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 600px;
+    height: 40px;
+    padding: 15px;
+    outline: none;
+}
+
+.card-body .canvas .write-message form #send {
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #ff8a00;
+    border: 2px solid #ffffff;
+    width: 80px;
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+    box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+    outline: none;
+}
+
+.chat-area {
+    height: 395px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.message h4 {
+    margin: 8px;
+    padding: 10px;
+    width: auto;
+    max-width: 50%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+    box-shadow: 0px 2px 4px 1px rgba(148, 151, 156, 1);
+}
+
+.message-right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.message-right h4 {
+    background-color: #ff8a00;
+}
+
+.message-left {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.no-message {
+    color: #ff8a00;
+    font-size: 40px;
+}
+/*# sourceMappingURL=home.css.map */
