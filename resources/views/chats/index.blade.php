@@ -3,11 +3,15 @@
 @section('content')
 <div class="container">
 
- <!--   <script>
+    <script>
+        window.onload = function() {
+            document.getElementById('scroll-here').scrollIntoView();
+};
+
         setTimeout(function(){
             location.reload();
         },30000); // 5000 milliseconds means 5 seconds.
-     </script> --->
+    </script>
 
             <div class="card">
                 <div class="card-header">
@@ -34,13 +38,13 @@
                               @if ($message->sender_id == Auth::user()->id && $message->receiver_id == $receiver->id)
                               <div class="message message-right">
                                 <h4>{{$message->message}}</h4>
-                                {{$message->created_at}}
+                                <h7 class="time-sent">{{$message->created_at->format('H:i')}}</h7>
                               </div>
                               @endif
                               @if ($message->receiver_id == Auth::user()->id && $message->sender_id == $receiver->id)
                               <div class="message message-left">
                                 <h4>{{$message->message}}</h4>
-                                {{$message->created_at}}
+                                <h7 class="time-sent">{{$message->created_at->format('H:i')}}</h7>
                               </div>
                               @endif
                         
@@ -48,6 +52,7 @@
                               
                     @endforeach
                         @endif
+                        <div id="scroll-here"></div>
                         </div>
     
                         <div class="write-message">
