@@ -40,6 +40,7 @@
                               @if ($message->receiver_id == Auth::user()->id && $message->sender_id == $receiver->id)
                               <div class="message message-left">
                                 <h4>{{$message->message}}</h4>
+                                {{$message->created_at}}
                               </div>
                               @endif
                         

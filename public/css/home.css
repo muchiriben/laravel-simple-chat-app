@@ -292,6 +292,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: auto;
     cursor: pointer;
@@ -312,6 +313,7 @@
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .message-right h4 {
@@ -322,6 +324,7 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .no-message {
